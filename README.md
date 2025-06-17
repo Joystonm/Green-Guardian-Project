@@ -27,6 +27,8 @@ GreenGuardian provides real-time environmental monitoring, risk assessment, and 
 - Mem0 account & key (https://mem0.ai)
 - Keywords AI token (https://keywords.ai)
 - CopilotKit setup (https://docs.copilotkit.ai)
+- Appwrite cloud
+- Open Weather Api
 
 ### Frontend Setup
 1. Install dependencies:
@@ -36,8 +38,26 @@ GreenGuardian provides real-time environmental monitoring, risk assessment, and 
 
 2. Make sure the `.env` file has your API keys:
    ```
-   NEXT_PUBLIC_BACKEND_URL=http://localhost:8000
-   NEXT_PUBLIC_COPILOT_API_KEY=local-development
+   TAVILY_API_KEY=
+
+   # Appwrite Configuration
+   APPWRITE_ENDPOINT=
+   APPWRITE_PROJECT_ID=
+   APPWRITE_API_KEY=
+   
+   
+   # Mem0 Configuration
+   MEM0_API_KEY=
+
+   # Weather API Configuration
+   WEATHER_API_KEY=
+   
+   # Keywords AI Configuration
+   KEYWORDS_AI_API_KEY=
+   
+   # Environment
+   NODE_ENV=development
+
    ```
 
 3. Start the development server:
@@ -51,18 +71,7 @@ GreenGuardian provides real-time environmental monitoring, risk assessment, and 
    cd backend
    ```
 
-2. Create a virtual environment:
-   ```
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. Install dependencies:
-   ```
-   pip install -r ../requirements.txt
-   ```
-
-4. Start the FastAPI server:
+2. Start the FastAPI server:
    ```
    uvicorn main:app --reload
    ```
@@ -76,7 +85,6 @@ GreenGuardian/
 ├── public/         → Static assets, icons
 ├── scripts/        → Dev tools and test seeders
 ├── database/       → Appwrite schema
-├── docs/           → Architecture and usage
 ├── .env            → API keys and tokens
 └── README.md
 ```
