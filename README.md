@@ -1,6 +1,6 @@
 # GreenGuardian – AI for Environmental Monitoring
 
-An AI-powered platform for monitoring and analyzing local environmental conditions.
+An AI-powered platform for monitoring and analyzing environmental conditions.
 
 ## Overview
 GreenGuardian provides real-time environmental monitoring, risk assessment, and personalized advice to help users understand and respond to environmental conditions in their area.
