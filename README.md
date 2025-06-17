@@ -1,4 +1,4 @@
-# GreenGuardian – AI for Local Environmental Monitoring
+# GreenGuardian – AI for Environmental Monitoring
 
 An AI-powered platform for monitoring and analyzing local environmental conditions.
 
@@ -13,35 +13,35 @@ GreenGuardian provides real-time environmental monitoring, risk assessment, and 
 - Historical environmental data analysis
 
 ## Tech Stack
-- Frontend: React.js with CopilotKit
-- Backend: Python FastAPI
-- Data Sources: Tavily, weather APIs
-- Storage: Appwrite, Mem0
-- Monitoring: Keywords AI
+- **Frontend**: React.js + TypeScript
+-	**Styling**: Tailwind CSS 
+-	**Mapping**: Leaflet.js
+-	**Authentication & Backend**: Appwrite
+-	**Environmental Data APIs**:
+  o	OpenWeatherMap (temperature, humidity, rainfall)
+  o	AirQuality API (AQI, PM2.5, PM10)
+  o	Satellite Imagery API (NDVI, vegetation changes)
+-	**CopilotKit** – Embedded in-app copilots that help users interact with environmental data more intuitively, suggest analysis, and offer AI-guided exploration of trends.
+-	**Tavily** – Used for AI-enhanced environmental context and information retrieval, such as explaining climate risks or defining environmental terms dynamically.
+-	**Mem0** – Integrated for lightweight vector memory, enabling contextual responses based on a user’s past queries or preferences.
+
 
 ## Key Components
-
-### Frontend
 - **MapView**: Interactive map visualization of pollution and risk zones
 - **RiskSummary**: Environmental risk assessment display
 - **AdvicePanel**: Preventive advice based on local conditions
 - **ChatAgent**: AI-powered chat assistant for environmental queries
-
-### Backend (Python FastAPI)
-- **API Layer**: RESTful endpoints for data retrieval and processing
 - **Agent Layer**: AI agents for specialized tasks
   - **PollutionAgent**: Processes pollution data from various sources
   - **AdviceAgent**: Generates recommendations based on environmental data
   - **MemoryAgent**: Manages conversation history and context
 
-### Services
+## Services
 - **TavilyService**: Integration with Tavily for environmental data retrieval
 - **Mem0Service**: Memory storage for conversation context
 - **AppwriteService**: User management and database operations
 - **WeatherAPI**: Integration with weather data providers
 - **KeywordsAI**: Monitoring and tracing for AI operations
-
-### Storage
 - **Appwrite**: Primary database for user data, regions, and environmental records
 - **Mem0**: Memory storage for conversation context and historical queries
 
@@ -54,29 +54,8 @@ GreenGuardian provides real-time environmental monitoring, risk assessment, and 
 5. Results are stored in the database and returned to the frontend
 6. Frontend displays the processed data to the user
 
-## Monitoring and Logging
-
-- **KeywordsAI**: Monitors LLM operations and traces API calls
-- **Appwrite Logs**: Stores system events and user interactions
-
-## Deployment Architecture
-
-The system is designed to be deployed as:
-- Frontend: Vercel or similar static hosting
-- Backend: Containerized service on AWS, GCP, or Azure
-- Database: Appwrite Cloud or self-hosted instance
-
 
 ## Getting Started
-
-### Prerequisites
-- Node.js, Python 3.10+, Appwrite Cloud account
-- Tavily API key (https://tavily.com)
-- Mem0 account & key (https://mem0.ai)
-- Keywords AI token (https://keywords.ai)
-- CopilotKit setup (https://docs.copilotkit.ai)
-- Appwrite cloud
-- Open Weather Api
 
 ### Frontend Setup
 1. Install dependencies:
@@ -123,16 +102,3 @@ The system is designed to be deployed as:
    ```
    uvicorn main:app --reload
    ```
-
-## Project Structure
-```
-GreenGuardian/
-├── frontend/       → React.js + CopilotKit UI
-├── backend/        → Python FastAPI with agent services
-├── services/       → Tavily, Mem0, Appwrite integrations
-├── public/         → Static assets, icons
-├── scripts/        → Dev tools and test seeders
-├── database/       → Appwrite schema
-├── .env            → API keys and tokens
-└── README.md
-```
