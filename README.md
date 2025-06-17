@@ -32,9 +32,9 @@ GreenGuardian provides real-time environmental monitoring, risk assessment, and 
 - **AdvicePanel**: Preventive advice based on local conditions
 - **ChatAgent**: AI-powered chat assistant for environmental queries
 - **Agent Layer**: AI agents for specialized tasks
-  - **PollutionAgent**: Processes pollution data from various sources
-  - **AdviceAgent**: Generates recommendations based on environmental data
-  - **MemoryAgent**: Manages conversation history and context
+    - **PollutionAgent**: Processes pollution data from various sources
+    - **AdviceAgent**: Generates recommendations based on environmental data
+    - **MemoryAgent**: Manages conversation history and context
 
 ## Services
 - **TavilyService**: Integration with Tavily for environmental data retrieval
