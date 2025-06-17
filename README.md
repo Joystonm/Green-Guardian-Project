@@ -18,9 +18,9 @@ GreenGuardian provides real-time environmental monitoring, risk assessment, and 
 -	**Mapping**: Leaflet.js
 -	**Authentication & Backend**: Appwrite
 -	**Environmental Data APIs**:
-  o	OpenWeatherMap (temperature, humidity, rainfall)
-  o	AirQuality API (AQI, PM2.5, PM10)
-  o	Satellite Imagery API (NDVI, vegetation changes)
+  - OpenWeatherMap (temperature, humidity, rainfall)
+  -	AirQuality API (AQI, PM2.5, PM10)
+  -	Satellite Imagery API (NDVI, vegetation changes)
 -	**CopilotKit** – Embedded in-app copilots that help users interact with environmental data more intuitively, suggest analysis, and offer AI-guided exploration of trends.
 -	**Tavily** – Used for AI-enhanced environmental context and information retrieval, such as explaining climate risks or defining environmental terms dynamically.
 -	**Mem0** – Integrated for lightweight vector memory, enabling contextual responses based on a user’s past queries or preferences.
